@@ -1,7 +1,6 @@
 # Tableau Extension - Toggle & Export Sheets
 
-#### A Introduction to basic Extention capabilities!
-
+#### An introduction to basic Extensions API capabilities!
 ![Extension Screenshot](./public/screenshot.png)
 
 - Toggle worksheet visibility
@@ -10,6 +9,8 @@
 - Export all sheets as Excel
 
 This is my first foray into the world of the Tableau Extensions API! This meant to be an example/tutorial of some introductory API functionality, as well as how to integrate with a modern JavaScript framework -- Vue.js.
+
+### Blog post/YouTube to follow!
 
 ---
 # Vue.JS specific commands:
