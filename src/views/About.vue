@@ -24,7 +24,7 @@
         >View Source @ GitHub</v-btn
       >
     </div>
-    <div class="pt-4 d-flex justify-space-evenly">
+    <div class="pt-4 d-flex justify-center">
       <a href="https://twitter.com/UpInYourVizness" target="_blank">
         <div class="px-2 d-flex align-center">
           <v-icon small color="#1DA1F2" class="pr-1">mdi-twitter</v-icon>
