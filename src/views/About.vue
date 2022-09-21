@@ -6,8 +6,8 @@
     </div>
     <div class="px-2 text-justify">
       This is my first foray into the world of the Tableau Extensions API! This
-      meant to be an example/tutorial of some introductory API functionality, as
-      well as how to integrate with a modern JavaScript framework.
+      is meant to be an example/tutorial of some introductory API functionality,
+      as well as how to integrate with a modern JavaScript framework.
     </div>
 
     <div class="px-2 py-3 text-justify">
