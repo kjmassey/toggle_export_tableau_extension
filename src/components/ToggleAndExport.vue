@@ -9,10 +9,12 @@
       v-for="(ws, index) in this.getFilteredObjects('worksheet')"
       :key="`sheet-${index}`"
       v-on:isLoading="setOverlay"
+      v-on:sheetSelection="setSheet"
     />
-
     <DownloadCombinedButton :db="this.dashboard" v-on:isLoading="setOverlay" />
+    <div class="pb-2"></div>
 
+    <!-- <GetSelectedMarks /> -->
     <IsLoading :show="this.showOverlay" />
   </v-container>
 </template>
@@ -23,6 +25,7 @@ import DashboardTitle from "@/components/DashboardTitle";
 import ObjectTypeHeader from "@/components/ObjectTypeHeader";
 import WorksheetItem from "@/components/WorksheetItem";
 import DownloadCombinedButton from "@/components/DownloadCombinedButton";
+// import GetSelectedMarks from "@/components/GetSelectedMarks.vue";
 import IsLoading from "@/components/IsLoading";
 
 export default {
@@ -34,17 +37,23 @@ export default {
     objects: [],
     paramVals: {},
     showOverlay: false,
+    selectedSheet: null,
   }),
   components: {
     DashboardTitle,
     ObjectTypeHeader,
     WorksheetItem,
     DownloadCombinedButton,
+    // GetSelectedMarks,
     IsLoading,
   },
   methods: {
     setOverlay: function (val) {
       this.showOverlay = val;
+    },
+    setSheet: function (val) {
+      this.selectedSheet = val;
+      console.log("+++ ", this.selectedSheet);
     },
     initTab: async function () {
       // Show loader
