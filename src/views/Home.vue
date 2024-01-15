@@ -5,7 +5,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import ToggleAndExport from "@/components/ToggleAndExport.vue";
 
 export default {
