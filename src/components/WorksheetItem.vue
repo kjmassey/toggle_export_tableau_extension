@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="px-2 py-1 obj-div sheet-div">
+    <div class="px-2 py-1 obj-div sheet-div" v-on:click="setSelectedSheet(ws)">
       <div>
         <v-icon medium>mdi-file-chart-outline</v-icon>
         <span class="caption font-weight-medium pl-2">{{ ws.name }}</span>
@@ -133,6 +133,9 @@ export default {
           });
         }
       });
+    },
+    setSelectedSheet: function (ws) {
+      this.$emit("sheetSelection", ws);
     },
   },
 };
